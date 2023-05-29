@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <main class="main_container">
+        <header class="cabecalho">
+
+            <img class="logoAlura" src="images/logo.png" alt="Logo da Alura">
+            <h1>Decodificador e codificador</h1>
+        </header>
+
+        <section class="container-input">
+            <div class="input">
+                <textarea id="textArea" name="DigiteTexto" cols="41" rows="4" maxlength="200" placeholder="Digite seu texto..."></textarea>
+                <h6>&#9432; Apenas letras minusculas e sem acento</h6>
+            </div>
+
+
+            <div id="output">
+                
+                
+                <h2>Sua mensagem aparecerá aqui!</h2>
+                <div class="msg">
+                <span id ="TextoDescriptografado"></span>
+                <!-- <textarea class="mensagem" name="TextoEncriptado" cols="20" rows="10"></textarea> -->
+                </div>
+                <img class="boneco" src="images/boneco.png" alt="Imagem boneco">
+                <button id="btn-copiar"  class="btn-copiar" onclick="copiar()" >Copiar</button>
+
+            </div>
+        </section>
+
+        <div class="botoes">
+            <div class="container-bnt">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="info">
+
+        </div>
+
+        
+    </footer>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
