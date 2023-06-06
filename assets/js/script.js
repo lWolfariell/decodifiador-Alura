@@ -13,8 +13,18 @@ function btnEncriptar(){
     mensagem.textContent = textoEncriptado;
     textArea.value = '';
 
+    const nenhumaMensagem = document.querySelector('.txt1')
+    nenhumaMensagem.classList.add('hide-txt1');
+
+    const outraMensagem = document.querySelector('.txt2')
+    outraMensagem.classList.add('hide-txt2');
+
     const myImage = document.querySelector('.boneco');
     myImage.classList.add('hide-image');
+
+    const botaoAparece = document.querySelector('.btn-copiar')
+    botaoAparece.classList.add('show-item');
+
 }
 
 let matrizCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']];
