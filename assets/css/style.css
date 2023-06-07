@@ -9,9 +9,9 @@ body {
 }
 
 .cabecalho{
-    display: flex;
     justify-content: space-between;
     padding: 2%;
+    display:flex;
 }
 
 .cabecalho h1 {
@@ -21,78 +21,104 @@ body {
 }
 
 .cabecalho img{
-    max-width: 70px;
-    max-height: 70px;
+    display: flex;
+    flex-direction: column;
+    left: 40px;
+    top: 1px;
     width: auto;
     height: auto;
 }
 
 .container{
-    display: flex;
     justify-content: space-between;
     padding: 2% 0 0 4%;
 }
 
-.container .input{
-    width: 400px;
-    height: 330px;
-}
-
-textarea{
-    width: 680px;
-    height: 288px;
-    font-size: 20px;
+.input textarea{
+    position: absolute;
+    width: 780px;
+    height: 250px;
+    font-size: 32px;
     color: #0A3871;
     background: transparent;
     box-shadow: none;
     border: none;
     outline: 0;
-    padding: 10px;
+    padding: 110px;
     resize: none;
+    
 }
 
-h6 {
+.input h6 {
     font-size: 12px;
+    position: absolute;
     line-height: 150%;
     opacity: 0.8;
     color: #495057;
+    top: 550px;
+    left: 10%;
 }
 
-#output{
-    border: 3px solid #FFFFFF;
-    box-shadow: 0px 24px 32px -8px;
-    border-radius: 20px;
-    width: 350px;
-    height: 400px;
-    margin-right: 3%;
-    max-height: 400px;
-    text-align: center;
-    max-height: 400px;
+.conteudo{
+    position: absolute;
+    max-width: 400px;
+    max-height: 544px;
+    width: 400px;
+    height: 544px;
+    left: 1000px;
+    top: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
     align-items: center;
-    align-content: center;
-    background-color: #FFFFFF;
+    text-align: center;
+    padding: 30px 4px 4px 4px;
 }
 
-#output h2{    
-    font-size: 25px;
-    color: #0A3871;
-}
 
-.msg{
-    position: relative;
+
+.conteudo img{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    left: 12%;
     top: 10%;
 }
 
-#output span{
-    font-size: 16px;
-    line-height: 150%;
-    word-wrap: break-word;
-    max-width: 100%;
-    color: #495057;
+.conteudo h2{    
+    font-size: 25px;
+    color: #0A3871;
+    height: 350px;
 }
 
+.msg{
+    position: absolute;
+    top: 80%;
+    left: 7%;
+}
+
+.conteudo span{
+    position: absolute;
+    width: 350px;
+    height: 255px;
+    left: 7%;
+    bottom: 160px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #495057;
+    word-wrap: break-word;
+    
+}
+
+
+
 .botoes{
+    position: absolute;
     display: flex;
+    gap: 24px;
+    top: 570px;
+    left: 10%;
 }
 
 .botoes button{
@@ -123,9 +149,9 @@ h6 {
 
 .btn-copiar{
     position: absolute;
-    top: 210px;
     right: 5px;
     left: 6px;
+    top: 5px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     text-decoration: none;
