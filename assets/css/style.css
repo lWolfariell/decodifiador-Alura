@@ -4,41 +4,46 @@
     padding: 0;    
 }
 
+.main_container{
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background: #E5E5E5;
 }
 
 .cabecalho{
     justify-content: space-between;
-    padding: 2%;
+    padding: 1%;
     display:flex;
 }
 
 .cabecalho h1 {
     color: #0A3871;    
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    font-size: 2rem;
+    align-self: center;
 }
 
 .cabecalho img{
     display: flex;
     flex-direction: column;
-    left: 40px;
-    top: 1px;
     width: auto;
     height: auto;
 }
 
 .container{
+    display: flex;
     justify-content: space-between;
     padding: 2% 0 0 4%;
 }
 
 .input textarea{
     position: absolute;
-    width: 780px;
-    height: 250px;
-    font-size: 32px;
+    width: 50rem;
+    height: 20rem;
+    font-size: 2rem;
     color: #0A3871;
     background: transparent;
     box-shadow: none;
@@ -61,12 +66,11 @@ body {
 
 .conteudo{
     position: absolute;
+    
     max-width: 400px;
     max-height: 544px;
-    width: 400px;
-    height: 544px;
-    left: 1000px;
-    top: 90px;
+    width: 24%;
+    height: 75%;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
