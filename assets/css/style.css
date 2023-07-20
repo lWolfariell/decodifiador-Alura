@@ -2,41 +2,27 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;    
-}
-
-.main_container{
-    width: 100%;
-    height: 100%;
-}
-
-body {
     background: #E5E5E5;
 }
 
 .cabecalho{
-    justify-content: space-between;
-    padding: 1%;
     display:flex;
-}
-
-.cabecalho h1 {
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;    
     color: #0A3871;    
-    font-family: 'Inter', sans-serif;
     font-size: 2rem;
-    align-self: center;
+    text-align: right;
 }
 
-.cabecalho img{
+.main_container{
     display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
+    flex-direction: column;   
 }
 
 .container{
     display: flex;
-    justify-content: space-between;
-    padding: 2% 0 0 4%;
+    padding: 1rem 0 0 2rem;
 }
 
 .input textarea{

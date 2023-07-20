@@ -17,53 +17,54 @@
 </head>
 
 <body>
+    
+    <header class="cabecalho">
+
+        <img class="logoAlura" src="/assets/images/logo.png" alt="Logo da Alura">
+        <h1>Decodificador e codificador</h1>
+
+    </header>
 
     <main class="main_container">
 
-        <header class="cabecalho">
+        <section class="container">
 
-            <img class="logoAlura" src="/assets/images/logo.png" alt="Logo da Alura">
-            <h1>Decodificador e codificador</h1>
+            <div class="input">
 
-        </header>
+                <textarea id="textArea" name="DigiteTexto" cols="1" rows="4" maxlength="200"
+                    placeholder="Digite seu texto..."></textarea>
 
-            <section class="container">
-            
-                <div class="input">
+                <h6>&#9432; Apenas letras minusculas e sem acento</h6>
 
-                    <textarea id="textArea" name="DigiteTexto" cols="1" rows="4" maxlength="200" placeholder="Digite seu texto..."></textarea>
-                
-                    <h6>&#9432; Apenas letras minusculas e sem acento</h6>
-                
-                        <div class="botoes">
-                
-                            <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                            <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
-                
-                        </div>
+                <div class="botoes">
+
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
 
                 </div>
 
-                    <div class="conteudo">
-                
-                        <h2 class="txt1">Nenhuma mensagem encontrada</h2>
-                    
-                        <p class="txt2">Digite um texto que você deseja criptografar ou descriptografar</p>
-                    
-                        <img class="boneco" src="/assets/images/boneco.png" alt="Boneco">
-                    
-                            <div class="msg">
-                
-                                <span id ="TextoDescriptografado"></span>
-                                <button id="btn-copiar"  class="btn-copiar" onclick="copiar()" >Copiar</button>
-        
-                            </div>
-                 
-                            
-                    </div>
+            </div>
 
-            </section>
-        
+            <div class="conteudo">
+
+                <h2 class="txt1">Nenhuma mensagem encontrada</h2>
+
+                <p class="txt2">Digite um texto que você deseja criptografar ou descriptografar</p>
+
+                <img class="boneco" src="/assets/images/boneco.png" alt="Boneco">
+
+                <div class="msg">
+
+                    <span id="TextoDescriptografado"></span>
+                    <button id="btn-copiar" class="btn-copiar" onclick="copiar()">Copiar</button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
     </main>
 
     <script src="assets/js/script.js"></script>
